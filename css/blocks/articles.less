@@ -1,0 +1,89 @@
+// main: ../style.less
+
+.articles{
+display: flex;
+flex-wrap: wrap;
+margin: 0 -1rem;
+}
+
+.articles__col {
+    width: 33.3333%;
+    padding: 0 1rem;
+}
+
+.articles__item{
+    margin-bottom: 2rem;
+}
+
+.articles__header {
+    position: relative;
+margin-bottom: 1.35rem;
+}
+
+.articles__date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 77px;
+    height: 77px;
+
+    background-color: @black;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    color: @white;
+    font-weight: 700;
+    font-size: 1.06rem;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.articles__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+}
+
+.articles__content{
+    margin-bottom: 1.8rem;
+}
+
+.articles__title {
+    line-height: 16px;
+font-weight: 700;
+letter-spacing: 0.05em;
+color: @black;
+font-size: 1.2rem;
+
+margin-bottom: .6rem;
+
+a{
+  color: inherit;  
+  text-decoration: none;
+
+  &:hover 
+  {
+      text-decoration: underline;
+  }
+}
+}
+
+.articles__cat {
+line-height: 16px;
+font-weight: 400;
+letter-spacing: 0.05em;
+color: @black;
+font-size: .8rem;
+margin-bottom: 1.5rem;
+}
+
+.articles__text{
+    font-size: .8rem;
+    line-height: 2;
+    font-weight: 300;
+    color: @gray;  
+}
